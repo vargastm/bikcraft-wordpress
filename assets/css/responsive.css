@@ -1,0 +1,128 @@
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+    .quality:after {
+       display: none;
+    }
+    
+    .quality-group li {
+        padding: 0 20px;
+    }
+
+    .footer-social ul li a {
+        padding: 6px;
+    }
+
+    .footer-social ul li a img { 
+        width: 26px;
+    }
+
+    .introduction, .introduction-internal {
+        margin-top: 77px;
+    }
+
+    .products-group h2 {
+        top: -150px;
+    }
+
+    .products-icon {
+        padding: 41px 0;
+    }
+
+    .products-info p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 20px 30px;
+        height: 122px;
+    }
+
+    .products-info ul li {
+        width: 181px;
+        height: 49px;
+    }
+}
+
+@media only screen and (max-width: 787px) {
+    .header {
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    .header img {
+        margin: 0 auto 20px auto;
+    }
+
+    .header-menu ul li {
+        text-align: center;
+        margin: 0 auto 5px auto;
+        width: 100%;
+    }
+
+    .introduction {
+        margin-top: 0;
+        padding-top: 40px;
+        background: url("../images/bg-mobile.jpg");
+    }
+
+    .introduction h1{
+        font-size: 36px;
+    }
+
+    .introduction-internal {
+        margin-top: 0px;
+    }
+
+    .call-to-action {
+        padding-top: 10px;
+    }
+
+    .quality:after {
+        display: none;
+    }
+
+    .about-mission p {
+        font-size: 14px;
+        line-height: 20px;
+        padding-right: 0;
+    }
+
+    .about-mission ul li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .products-group h2 {
+        top: -110px;
+        margin-bottom: -68px;
+    }
+
+    .products-icon {
+        padding: 41px 0;
+    }
+
+    .products-info p {
+        font-size: 14px;
+        line-height: 20px;
+        height: auto;
+        padding: 20px 30px;
+    }
+
+    .products-info ul li {
+        width: 149px;
+        height: 49px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 14px;
+    }
+
+    .form {
+        padding-right: 0;
+    }
+
+    .budget-data ul {
+        padding-right: 0;
+    }
+
+    .contact-form {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+}
