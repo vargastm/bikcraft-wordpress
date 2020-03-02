@@ -3,13 +3,8 @@
 get_header();
 ?>
 
-<?php get_header(); ?>
-        <section class="introduction-internal contact-internal">
-            <div class="container">
-                <h1 data-anime="400" class="fadeInDown">Contato</h1>
-                <p data-anime="800" class="fadeInDown">tire suas duvidas com  a gente</p>
-            </div>
-        </section>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php include(TEMPLATEPATH . "/include/introduction.php"); ?>
         <section data-anime="1200" class="contact container fadeInDown">
             <form id="form-budget" class="contact-form grid-8">
                 <label for="name">Nome</label>
@@ -39,4 +34,5 @@ get_header();
         <section class="container contact-map">
             <a href="http://google.com" target="_blank" class="grid-16"><img src="assets/images/address-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
         </section>
+<?php endwhile; else: endif; ?>
 <?php get_footer(); ?>

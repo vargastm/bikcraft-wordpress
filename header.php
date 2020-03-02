@@ -11,7 +11,7 @@
     <body>
         <header class="header">
             <div class="container">
-                <a href="index.html" class="grid-2"><img src="assets/images/bikcraft.svg" alt="Bikcraft"></a>
+                <a href="/" class="grid-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bikcraft.svg" alt="Bikcraft"></a>
                 <nav class="header-menu grid-14">
                     <ul>
                         <li><a href="/sobre">Sobre</a></li>

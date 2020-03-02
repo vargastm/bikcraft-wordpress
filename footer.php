@@ -23,9 +23,9 @@
                     <div class="grid-4 footer-social">
                         <h3>Contato</h3>
                         <ul>
-                            <li><a href="#" target="_blank"><img src="assets/images/social-media/facebook.svg"></a></li>
-                            <li><a href="#" target="_blank"><img src="assets/images/social-media/instagram.svg"></a></li>
-                            <li><a href="#" target="_blank"><img src="assets/images/social-media/twitter.svg"></a></li>
+                            <li><a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/social-media/facebook.svg"></a></li>
+                            <li><a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/social-media/instagram.svg"></a></li>
+                            <li><a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/social-media/twitter.svg"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                 </div>
             </div>
         </footer>
-        <script src="assets/js/simple-anime.js"></script>
-        <script src="assets/js/script.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/simple-anime.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
         <?php wp_footer(); ?>
     </body>
 </html>

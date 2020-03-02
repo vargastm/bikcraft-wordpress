@@ -134,7 +134,7 @@ img {
 .introduction {
     width: 100%;
     height: 380px;
-    background: url("../images/bg.jpg") no-repeat center;
+    background: url("assets/images/bg.jpg") no-repeat center;
     background-size: cover;
     margin-top: 92px;
     text-align: center;
@@ -285,7 +285,7 @@ img {
     width: 634px;
     height: 83px;
     display: block;
-    background: url("../images/lines.svg") no-repeat center;
+    background: url("assets/images/lines.svg") no-repeat center;
     position: absolute;
     top: 209px;
     right: 162px;
@@ -327,7 +327,7 @@ img {
 .break {
     width: 100%;
     height: 220px;
-    background: url("../images/bg-footer.jpg") no-repeat center;
+    background: url("assets/images/bg-footer.jpg") no-repeat center;
     background-size: cover;
     text-align: center;
     padding-top: 40px;
