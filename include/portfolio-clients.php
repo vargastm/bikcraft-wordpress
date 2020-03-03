@@ -1,5 +1,8 @@
+<?php $portfolio = get_page_by_title('portfolio'); ?>
     <ul class="portfolio-group">
-        <li class="grid-8"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-        <li class="grid-8"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/ride.jpg" alt="Bicicleta Passeio"></li>
-        <li class="grid-16"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/sport.jpg" alt="Bicicleta Sport"></li>
+        <?php if(have_rows('portfolio_item', $portfolio)): while(have_rows('portfolio_item', $portfolio)) : the_row(); ?>
+            <li class="grid-8"><img src="<?php the_sub_field('portfolio_image1', $portfolio); ?>" alt="<?php the_sub_field('portfolio_image_description1', $portfolio); ?>"></li>
+            <li class="grid-8"><img src="<?php the_sub_field('portfolio_image2', $portfolio); ?>" alt="<?php the_sub_field('portfolio_image_description2', $portfolio); ?>"></li>
+            <li class="grid-16"><img src="<?php the_sub_field('portfolio_image3', $portfolio); ?>" alt="<?php the_sub_field('portfolio_image_description3', $portfolio); ?>"></li>
+        <?php endwhile; else : endif; ?>
     </ul>

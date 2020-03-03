@@ -7,14 +7,19 @@ Description: Tema criado para a Bikcraft
 Version: 1.0
 */
 
-@import 'assets/css/reset.css';
 @import 'assets/css/normalize.css';
+@import 'assets/css/reset.css';
 @import 'assets/css/grid.css';
 @import 'assets/css/about.css';
 @import 'assets/css/products.css';
 @import 'assets/css/portfolio.css';
 @import 'assets/css/contact.css';
 @import 'assets/css/responsive.css';
+
+/* ADM WordPress Styles */
+.customize-support .header {
+    margin-top: 32px;
+}
 
 /* General Styles */
 body {

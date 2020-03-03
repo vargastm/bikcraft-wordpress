@@ -6,9 +6,9 @@ get_header();
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <section class="introduction">
             <div class="container">
-                <h1 data-anime="400" class="fadeInDown"><?php the_field('intro_title'); ?></h1>
+                <h1 data-anime="400" class="fadeInDown"><?php the_field('introduction_title'); ?></h1>
                 <blockquote data-anime="800" class="quote-external fadeInDown">
-                    <p><?php the_field('quote_introduction'); ?></p>
+                    <p><?php the_field('introduction_quote'); ?></p>
                     <cite><?php the_field('author'); ?></cite>
                 </blockquote>
                 <a href="/produtos" data-anime="1200" class="button">Orçamento</a>
@@ -40,7 +40,7 @@ get_header();
                 </li>
             </ul>
             <div class="call-to-action">
-                <p><?php the_field('call-products'); ?></p>
+                <p><?php the_field('call_products'); ?></p>
                 <a href="/produtos" class="button button-black">Produtos</a>
             </div>
         </section>
@@ -49,7 +49,7 @@ get_header();
                 <h2 class="subtitle"> Portfólio</h2>
                 <?php include(TEMPLATEPATH . "/include/portfolio-clients.php"); ?>
                 <div class="call-to-action">
-                    <p><?php the_field('call-portfolio'); ?></p>
+                    <p><?php the_field('call_portfolio'); ?></p>
                     <a href="/portfolio" class="button">Portfólio</a>
                 </div>
             </div>
@@ -58,7 +58,7 @@ get_header();
             <?php include(TEMPLATEPATH . "/include/quality.php"); ?>
             <div class="call-to-action">
                 <p>conheça mais a nossa história</p>
-                <a href="about.html" class="button button-black">Sobre</a>
+                <a href="/sobre" class="button button-black">Sobre</a>
             </div>
         </section>
 <?php endwhile; else: endif; ?>
