@@ -19,20 +19,16 @@ get_header();
             </form>
             <div class="contact-data grid-8">
                 <h3>Dados</h3> 
-                <span>+55 48 9 9352 3595</span> 
-                <span>orcamento@bikcraft.com</span>
-                <span>Rua Ali - Botafogo</span>
-                <span>Rio de Janeiro - RJ - Brasil</span>
+                <span><?php the_field('phone'); ?></span> 
+                <span><?php the_field('email'); ?></span>
+                <span><?php the_field('address1'); ?></span>
+                <span><?php the_field('address2'); ?></span>
                 <h3>Redes Sociais</h3>
-                <ul>
-                    <li><a href="#" target="_blank"><img src="assets/images/social-media/facebook.svg"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/images/social-media/instagram.svg"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/images/social-media/twitter.svg"></a></li>
-                </ul>
+                <?php include(TEMPLATEPATH . "/include/socialmedia.php"); ?>
             </div>
         </section>
         <section class="container contact-map">
-            <a href="http://google.com" target="_blank" class="grid-16"><img src="assets/images/address-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
+            <a href="<?php the_field('map_link'); ?>" target="_blank" class="grid-16"><img src="<?php the_field('map_image'); ?>" alt="<?php the_field('map_address'); ?>"></a>
         </section>
 <?php endwhile; else: endif; ?>
 <?php get_footer(); ?>
