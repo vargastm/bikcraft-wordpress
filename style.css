@@ -237,11 +237,14 @@ img {
 
 .products-icon {
     background: #000000;
-    padding: 20px;
 }
 
 .products-group img {
     margin: 0 auto;
+}
+
+.products-group a {
+    color: #000000;
 }
 
 .call-to-action {

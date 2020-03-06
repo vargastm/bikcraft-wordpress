@@ -36,7 +36,7 @@
                 </div>
                 <div class="copyright">
                     <div class="container">
-                        <p class="grid-16">Bikecraft <?php echo date('Y'); ?> - Alguns direitos reservados.</p>
+                        <p class="grid-16">Bikcraft <?php echo date('Y'); ?> - Alguns direitos reservados.</p>
                     </div>
                 </div>
             </div>

@@ -32,28 +32,25 @@ get_header();
     </section>
     <section data-anime="1600" class="products container fadeInDown">
         <h2 class="subtitle">Produtos</h2>
-        <ul class="products-group">
-            <li class="grid-1-3"> 
-                <div class="products-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/ride.svg" alt="Bikecraft Passeio">
-                </div>
-                <h3>Passeio</h3>
-                <p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
-            </li>
-            <li class="grid-1-3"> 
-                <div class="products-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/sport.svg" alt="Bikecraft Passeio">
-                </div>
-                <h3>Passeio</h3>
-                <p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
-            </li>
-            <li class="grid-1-3"> 
-                <div class="products-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/retro.svg" alt="Bikecraft Passeio">
-                </div>
-                <h3>Passeio</h3>
-                <p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
-            </li>
+        <ul class="products-group product-inline">
+            <?php
+                $args = array (
+                    'post_type' => 'produtos',
+                    'order' => 'ASC'    
+                );
+                $the_query = new WP_Query ( $args );
+            ?>
+                <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <li class="grid-1-3"> 
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="products-icon">
+                            <img src="<?php the_field('product_icon'); ?>" alt="Bikecraft <?php the_title(); ?>">
+                        </div>
+                        <h3><?php the_title(); ?></h3>
+                        <p><?php the_field('product_resume'); ?></p>
+                    </a>
+                </li>
+            <?php endwhile; else: endif; ?>
         </ul>
         <div class="call-to-action">
             <p><?php the_field('call_products'); ?></p>
