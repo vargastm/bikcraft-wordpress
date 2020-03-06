@@ -42,6 +42,7 @@
             </div>
         </footer>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/simple-anime.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/simple-slide.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
         <?php wp_footer(); ?>
     </body>

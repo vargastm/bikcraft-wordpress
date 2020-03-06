@@ -91,7 +91,7 @@ img {
     color: #FFFFFF;
 }
 
-.header-menu ul li a.active-menu  {
+.header-menu ul li.current_page_item a {
     color: #FFFFFF;
 }
 
